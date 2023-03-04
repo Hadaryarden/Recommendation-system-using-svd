@@ -2,13 +2,15 @@
 
 A recommendation system is an artificial intelligence or AI algorithm, usually associated with machine learning, that uses Big Data to suggest or recommend additional products to consumers
 
-here I used Singular value decomposition (SVD) which is a matrix factorization method that generalizes the eigendecomposition of a square matrix (n x n) to any matrix (n x m) (source).![Singular_value_decomposition](https://user-images.githubusercontent.com/121479608/222916535-73046fc7-d831-4245-a3a5-a766d3fbcba6.gif)
+here I used Singular value decomposition (SVD) which is a matrix factorization method that generalizes the eigendecomposition of a square matrix (n x n) to any matrix (n x m):
+
+![Singular_value_decomposition](https://user-images.githubusercontent.com/121479608/222916535-73046fc7-d831-4245-a3a5-a766d3fbcba6.gif)
+We chose to work with svd because we assumed that this implementation could return us the most accurate answer.
 
 
-Building a recommendation system based on artists that are on Spotify. 
+This recommendation system is based on artists and users who use Spotify
 The data contains - 2000 users and close to 20,000 artists.
-We chose to work with svd because we assumed that this implementation could return us the most accurate answer. We chose K according to the elbow method.
-First we split artist_user into a training set and a test set. We used a matrix calculation and then calculated the RMSE for the prediction we created for a different number of K features, to see how to choose the optimal K.
+First we split artist_user into a training set and a test set. We used a matrix calculation and then calculated the RMSE for the prediction we created for a different number of K features, to see how to choose the optimal K. We chose K according to the elbow method.
 After minimizing the RMSE for the user-artist file we divided, and getting a good enough result, we returned to the original problem. artist_user was used as the training set and the test file was used as the test file. in the for loop
 We went through each line in the test file and found the prediction we got from the svd. In the svd function we created a matrix
 Predictions therefore, for each artist and each stranger, if they exist in the training set, we accessed the corresponding row and column.
