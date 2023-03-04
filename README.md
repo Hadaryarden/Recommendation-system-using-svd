@@ -11,9 +11,8 @@ We chose to work with svd because we assumed that this implementation could retu
 - &nbsp; This recommendation system is based on artists and users who use Spotify
 - &nbsp;The data contains - 2000 users and close to 20,000 artists.
 
-First we split artist_user into a training set and a test set. We used a matrix calculation and then calculated the RMSE for the prediction we created for a different number of K features, to see how to choose the optimal K. We chose K according to the elbow method.
+First we split artist_user into a training set and a test set. We used a matrix calculation and then calculated the RMSE for the prediction we created for a different number of K features, to see how to choose the optimal K. We chose K according to the elbow method.<br>
 
-After minimizing the RMSE for the user-artist file we divided, and getting a good enough result, we returned to the original problem. artist_user was used as the training set and the test file was used as the test file. <br>
 In the for loop We went through each line in the test file and found the prediction we got from the svd. In the svd function we created a predictions matrix
 and therefore, for each artist and each user, if they exist in the training set, we accessed the corresponding row and column.<br>
 In the test file we received that there is one user who does not appear in the user-artist file. That means this user heard
