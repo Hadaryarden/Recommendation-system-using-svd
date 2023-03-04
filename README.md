@@ -1,3 +1,6 @@
+## WHAT IS 
+
+
 Building a recommendation system based on artists that are on Spotify. 
 The data contains - 2000 users and close to 20,000 artists.
 We chose to work with svd because we assumed that this implementation could return us the most accurate answer. We chose K according to the elbow method.
