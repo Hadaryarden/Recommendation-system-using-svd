@@ -1,8 +1,9 @@
-###### What is a recommendation system?
+### What is a recommendation system?
 
 A recommendation system is an artificial intelligence or AI algorithm, usually associated with machine learning, that uses Big Data to suggest or recommend additional products to consumers
 
-here I used svd (singular value decomposition) to solve this problem.
+here I used Singular value decomposition (SVD) which is a matrix factorization method that generalizes the eigendecomposition of a square matrix (n x n) to any matrix (n x m) (source).![Singular_value_decomposition](https://user-images.githubusercontent.com/121479608/222916535-73046fc7-d831-4245-a3a5-a766d3fbcba6.gif)
+
 
 Building a recommendation system based on artists that are on Spotify. 
 The data contains - 2000 users and close to 20,000 artists.
